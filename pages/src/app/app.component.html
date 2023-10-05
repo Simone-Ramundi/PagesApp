@@ -23,7 +23,33 @@
   </ul>
 </nav>
 
-<div>
-  <h4>{{ images[currentPage].title }}</h4>
+<div >
+  <h4 appClass [backgroundColor]=" 'orange' ">{{ images[currentPage].title }}</h4>
   <img [src]="images[currentPage].url" />
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div [ngSwitch]="currentPage">
+  <div *ngSwitchCase="0">
+    Current page is zero
+  </div>
+  <div *ngSwitchCase="1">
+    Current page is one
+  </div>
+  <div *ngSwitchCase="2">
+    Current page is two
+  </div>
+  <div *ngSwitchDefault>
+    Unknown!
+  </div>
+</div>-->
