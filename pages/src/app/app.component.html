@@ -10,7 +10,7 @@
         [ngClass]="{ active: i === currentPage }"
     *ngFor="let image of images; let i = index;">
       <a class="page-link"
-      (click)="currentPage = i">{{ i + 1 }}</a>
+      (click)="currentPage = i">{{ i + 1}}</a>
     </li>
 
     <li class="page-item"
@@ -20,3 +20,8 @@
     </li>
   </ul>
 </nav>
+
+<div>
+  <h4>{{ images[currentPage].title }}</h4>
+  <img [src]="images[currentPage].url" />
+</div>

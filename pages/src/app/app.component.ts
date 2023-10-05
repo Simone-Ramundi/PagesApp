@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  currentPage = 3;
+  currentPage = 0;
 
   images = [
     {
@@ -26,4 +26,5 @@ export class AppComponent {
       url: 'https://media.istockphoto.com/id/1417049186/it/foto/festa-di-compleanno-perfetta.jpg?s=612x612&w=is&k=20&c=zPjpt6ZBbDAsjv5cDctWUAgAEEcMIETxZdMHsaiRC38=',
     }
   ]
+  protected readonly Image = Image;
 }
